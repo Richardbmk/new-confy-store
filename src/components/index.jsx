@@ -11,6 +11,7 @@ import ProductsGrid from './ProductsGrid'
 import Filters from './Filters'
 import PaginationContainer from './PaginationContainer'
 import ProductsContainer from './ProductsContainer'
+import ProductsList from './ProductsList'
 
 export {
   ErrorElement,
@@ -26,4 +27,5 @@ export {
   Filters,
   PaginationContainer,
   ProductsContainer,
+  ProductsList,
 }
