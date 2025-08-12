@@ -8,6 +8,9 @@ import Hero from './Hero'
 import FeaturedProducts from './FeaturedProducts'
 import SectionTitle from './SectionTitle'
 import ProductsGrid from './ProductsGrid'
+import Filters from './Filters'
+import PaginationContainer from './PaginationContainer'
+import ProductsContainer from './ProductsContainer'
 
 export {
   ErrorElement,
@@ -20,4 +23,7 @@ export {
   FeaturedProducts,
   SectionTitle,
   ProductsGrid,
+  Filters,
+  PaginationContainer,
+  ProductsContainer,
 }
