@@ -13,8 +13,8 @@ const Products = () => {
   return (
     <>
       <Filters />
-      <PaginationContainer />
       <ProductsContainer />
+      <PaginationContainer />
       <div>This is the Products Page</div>
     </>
   )

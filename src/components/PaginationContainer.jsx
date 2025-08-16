@@ -4,8 +4,7 @@ import ProductsList from './ProductsList'
 const PaginationContainer = () => {
   return (
     <>
-      <ProductsGrid />
-      <ProductsList />
+      <h2>This is the pagination component</h2>
     </>
   )
 }
