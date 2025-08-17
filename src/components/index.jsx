@@ -12,6 +12,7 @@ import Filters from './Filters'
 import PaginationContainer from './PaginationContainer'
 import ProductsContainer from './ProductsContainer'
 import ProductsList from './ProductsList'
+import FormSelect from './FormSelect'
 
 export {
   ErrorElement,
@@ -28,4 +29,5 @@ export {
   PaginationContainer,
   ProductsContainer,
   ProductsList,
+  FormSelect,
 }
