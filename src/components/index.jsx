@@ -13,6 +13,7 @@ import PaginationContainer from './PaginationContainer'
 import ProductsContainer from './ProductsContainer'
 import ProductsList from './ProductsList'
 import FormSelect from './FormSelect'
+import FormRange from './FormRange'
 
 export {
   ErrorElement,
@@ -30,4 +31,5 @@ export {
   ProductsContainer,
   ProductsList,
   FormSelect,
+  FormRange,
 }
