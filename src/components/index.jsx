@@ -15,6 +15,7 @@ import ProductsList from './ProductsList'
 import FormSelect from './FormSelect'
 import FormRange from './FormRange'
 import FormCheckbox from './FormCheckbox'
+import Loading from './Loading'
 
 export {
   ErrorElement,
@@ -34,4 +35,5 @@ export {
   FormSelect,
   FormRange,
   FormCheckbox,
+  Loading,
 }
