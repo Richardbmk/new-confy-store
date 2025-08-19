@@ -66,9 +66,9 @@ const Filters = () => {
       <button type='submit' className='btn btn-primary btn-sm'>
         search
       </button>
-      <button to='/products' className='btn btn-accent btn-sm'>
+      <Link to='/products' className='btn btn-accent btn-sm'>
         reset
-      </button>
+      </Link>
     </Form>
   )
 }
