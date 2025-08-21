@@ -22,7 +22,6 @@ const Products = () => {
       <Filters />
       <ProductsContainer />
       <PaginationContainer />
-      <div>This is the Products Page</div>
     </>
   )
 }
