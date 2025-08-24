@@ -16,6 +16,8 @@ import FormSelect from './FormSelect'
 import FormRange from './FormRange'
 import FormCheckbox from './FormCheckbox'
 import Loading from './Loading'
+import CartTotals from './CartTotals'
+import CartItemsList from './CartItemsList'
 
 export {
   ErrorElement,
@@ -36,4 +38,6 @@ export {
   FormRange,
   FormCheckbox,
   Loading,
+  CartTotals,
+  CartItemsList,
 }
