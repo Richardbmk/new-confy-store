@@ -7,12 +7,13 @@ import { toggleTheme } from '../features/user/userSlice'
 
 const Navbar = () => {
   const dispatch = useDispatch()
+  const numItemsInCart = useSelector((state) => state.cartState.numItemsInCart)
+  const theme = useSelector((state) => state.userState.theme)
+  const isDarkTheme = theme === 'dracula'
 
   const handleTheme = () => {
     dispatch(toggleTheme())
   }
-
-  const numItemsInCart = useSelector((state) => state.cartState.numItemsInCart)
 
   return (
     <nav className='bg-base-200'>
@@ -43,7 +44,11 @@ const Navbar = () => {
         <div className='navbar-end'>
           {/* THEME ICONS */}
           <label className='swap swap-rotate'>
-            <input type='checkbox' onChange={handleTheme} />
+            <input
+              type='checkbox'
+              onChange={handleTheme}
+              defaultChecked={isDarkTheme}
+            />
             {/* sun icon */}
             <BsSunFill className='swap-on h-5 w-5' />
             {/* moon icon */}
