@@ -12,6 +12,7 @@ export const action = async ({ request }) => {
     toast.success('account created successfully')
     return redirect('/login')
   } catch (error) {
+    console.log(error)
     const errorMessage =
       error?.response?.data?.error?.message ||
       'please double check your credentials'
