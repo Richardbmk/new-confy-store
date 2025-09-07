@@ -1,9 +1,20 @@
 import { useSelector } from 'react-redux'
+import { toast } from 'react-toastify'
 import { CheckoutForm, SectionTitle, CartTotals } from '../components'
+import { redirect } from 'react-router-dom'
+
+export const loader = (store) => async () => {
+  const user = store.getState().userState.user
+
+  if (!user) {
+    toast.warn('You must be logged in to checkout')
+    return redirect('/login')
+  }
+  return null
+}
 
 const Checkout = () => {
   const cartTotal = useSelector((state) => state.cartState.cartTotal)
-  console.log(typeof cartTotal)
 
   if (cartTotal === 0) {
     return <SectionTitle text='Your cart is empty' />
