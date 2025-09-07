@@ -18,6 +18,7 @@ import FormCheckbox from './FormCheckbox'
 import Loading from './Loading'
 import CartTotals from './CartTotals'
 import CartItemsList from './CartItemsList'
+import CheckoutForm from './CheckoutForm'
 
 export {
   ErrorElement,
@@ -40,4 +41,5 @@ export {
   Loading,
   CartTotals,
   CartItemsList,
+  CheckoutForm,
 }
