@@ -1,7 +1,7 @@
 import { redirect, useLoaderData } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { customFetch } from '../utils'
-import { PaginationContainer, SectionTitle } from '../components'
+import { OrdersList, PaginationContainer, SectionTitle } from '../components'
 
 export const loader =
   (store) =>
@@ -22,6 +22,8 @@ export const loader =
           Authorization: `Bearer ${user.token}`,
         },
       })
+
+      return { orders: response.data.data, meta: response.data.meta }
     } catch (error) {
       console.log(error)
       const errorMessage =
@@ -36,7 +38,19 @@ export const loader =
   }
 
 const Orders = () => {
-  return <h1 className='text-3xl'>orders</h1>
+  const { meta } = useLoaderData()
+
+  if (meta.pagination.total < 1) {
+    return <SectionTitle text='Please make an order' />
+  }
+
+  return (
+    <>
+      <SectionTitle text='Your Orders' />
+      <OrdersList />
+      <PaginationContainer />
+    </>
+  )
 }
 
 export default Orders
