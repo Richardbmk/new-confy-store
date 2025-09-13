@@ -20,6 +20,7 @@ import CartTotals from './CartTotals'
 import CartItemsList from './CartItemsList'
 import CheckoutForm from './CheckoutForm'
 import OrdersList from './OrdersList'
+import ComplexPaginationContainer from './ComplexPaginationContainer'
 
 export {
   ErrorElement,
@@ -44,4 +45,5 @@ export {
   CartItemsList,
   CheckoutForm,
   OrdersList,
+  ComplexPaginationContainer,
 }

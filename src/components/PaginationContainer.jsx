@@ -9,8 +9,8 @@ const PaginationContainer = () => {
   })
 
   const { search, pathname } = useLocation()
-  console.log(`search: ${search}`)
-  console.log(`pathname: ${pathname}`)
+  // console.log(`search: ${search}`)
+  // console.log(`pathname: ${pathname}`)
 
   const navigate = useNavigate()
 
